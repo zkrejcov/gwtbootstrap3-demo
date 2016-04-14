@@ -39,6 +39,7 @@ org.gwtbootstrap3.extras.summernote.client.event
 org.gwtbootstrap3.extras.summernote.client.ui
 org.gwtbootstrap3.extras.summernote.client.ui.base
 org.gwtbootstrap3.extras.tagsinput.client
+org.gwtbootstrap3.extras.tagsinput.client.callback
 org.gwtbootstrap3.extras.tagsinput.client.event
 org.gwtbootstrap3.extras.tagsinput.client.ui
 org.gwtbootstrap3.extras.tagsinput.client.ui.base

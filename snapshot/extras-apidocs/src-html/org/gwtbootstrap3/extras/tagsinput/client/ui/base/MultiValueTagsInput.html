@@ -46,11 +46,11 @@
 <span class="sourceLineNo">038</span>import com.google.gwt.event.shared.HandlerRegistration;<a name="line.38"></a>
 <span class="sourceLineNo">039</span><a name="line.39"></a>
 <span class="sourceLineNo">040</span>/**<a name="line.40"></a>
-<span class="sourceLineNo">041</span> * Wrapper for Bootstrap Tags Input component implemented with &lt;select&gt; as underlying component.<a name="line.41"></a>
+<span class="sourceLineNo">041</span> * Wrapper for Bootstrap Tags Input component implemented with &amp;lt;select&amp;gt; as underlying component.<a name="line.41"></a>
 <span class="sourceLineNo">042</span> *<a name="line.42"></a>
 <span class="sourceLineNo">043</span> * @author Marko Nikolić &lt;marko.nikolic@iten.rs&gt;<a name="line.43"></a>
 <span class="sourceLineNo">044</span> */<a name="line.44"></a>
-<span class="sourceLineNo">045</span>public abstract class MultiValueTagsInput&lt;T&gt; extends TagsInputBase&lt;T&gt; implements HasValueChangeHandlers&lt;List&lt;String&gt;&gt; {<a name="line.45"></a>
+<span class="sourceLineNo">045</span>public class MultiValueTagsInput&lt;T&gt; extends TagsInputBase&lt;T&gt; implements HasValueChangeHandlers&lt;List&lt;String&gt;&gt; {<a name="line.45"></a>
 <span class="sourceLineNo">046</span><a name="line.46"></a>
 <span class="sourceLineNo">047</span>    public MultiValueTagsInput() {<a name="line.47"></a>
 <span class="sourceLineNo">048</span>        this(new CollectionDataset&lt;T&gt;(Collections.&lt;T&gt;emptyList()));<a name="line.48"></a>
@@ -102,16 +102,15 @@
 <span class="sourceLineNo">094</span>    public List&lt;String&gt; getValue() {<a name="line.94"></a>
 <span class="sourceLineNo">095</span>        if (isAttached())<a name="line.95"></a>
 <span class="sourceLineNo">096</span>            return toMultiValue(getValue(getElement()));<a name="line.96"></a>
-<span class="sourceLineNo">097</span>        else<a name="line.97"></a>
-<span class="sourceLineNo">098</span>            // TODO return value from attributes mixin if not attached        <a name="line.98"></a>
-<span class="sourceLineNo">099</span>            return new ArrayList&lt;String&gt;();<a name="line.99"></a>
-<span class="sourceLineNo">100</span>    }<a name="line.100"></a>
-<span class="sourceLineNo">101</span><a name="line.101"></a>
-<span class="sourceLineNo">102</span>    @Override<a name="line.102"></a>
-<span class="sourceLineNo">103</span>    public HandlerRegistration addValueChangeHandler(ValueChangeHandler&lt;List&lt;String&gt;&gt; handler) {<a name="line.103"></a>
-<span class="sourceLineNo">104</span>        return addHandler(handler, ValueChangeEvent.getType());<a name="line.104"></a>
-<span class="sourceLineNo">105</span>    }<a name="line.105"></a>
-<span class="sourceLineNo">106</span>}<a name="line.106"></a>
+<span class="sourceLineNo">097</span>        else    <a name="line.97"></a>
+<span class="sourceLineNo">098</span>            return new ArrayList&lt;String&gt;();<a name="line.98"></a>
+<span class="sourceLineNo">099</span>    }<a name="line.99"></a>
+<span class="sourceLineNo">100</span><a name="line.100"></a>
+<span class="sourceLineNo">101</span>    @Override<a name="line.101"></a>
+<span class="sourceLineNo">102</span>    public HandlerRegistration addValueChangeHandler(ValueChangeHandler&lt;List&lt;String&gt;&gt; handler) {<a name="line.102"></a>
+<span class="sourceLineNo">103</span>        return addHandler(handler, ValueChangeEvent.getType());<a name="line.103"></a>
+<span class="sourceLineNo">104</span>    }<a name="line.104"></a>
+<span class="sourceLineNo">105</span>}<a name="line.105"></a>
 
 
 
